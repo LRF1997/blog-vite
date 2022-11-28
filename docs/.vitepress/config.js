@@ -19,6 +19,7 @@ module.exports = {
     sidebar: {
       '/TypeScript': sidebarBackEnd(),
       '/vue': sidebarDatabase(),
+      '/JavaScript': sidebarJavaScript()
     },
   },
 }
@@ -36,6 +37,12 @@ function nav() {
       items: [
         { text: 'TS基础', link: '/TypeScript/base/README.md', activeMatch: '/TypeScript/' },
         { text: 'TS进阶', link: '/TypeScript/Advanced/class', activeMatch: '/TypeScript/' },
+      ]
+    },
+    {
+      text: 'JavaScript',
+      items: [
+        { text: '设计模式', link: '/JavaScript/README.md', activeMatch: '/JavaScript/' },
       ]
     },
     {
@@ -120,6 +127,23 @@ function sidebarDatabase() {
       text: '配置',
       items: [
         { text: '环境变量', link: '/vue/config/环境变量.md' },
+        { text: 'vite打包配置', link: '/vue/config/vite-build-config.md' },
+      ]
+    }
+  ]
+}
+
+
+function sidebarJavaScript() {
+  return [
+    {
+      text: '什么是设计模式',
+      collapsible: true,
+      items: [
+        { text: '单例模式', link: '/JavaScript/mds/单例模式' },
+        { text: '观察者模式', link: '/JavaScript/mds/观察者模式' },
+        { text: '发布订阅模式', link: '/JavaScript/mds/发布订阅模式'},
+        { text: '策略模式', link: '/JavaScript/mds/策略模式' },
       ]
     }
   ]
