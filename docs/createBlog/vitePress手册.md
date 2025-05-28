@@ -85,7 +85,7 @@ layout: home
 hero:
   name: LRF-博客🎉
   text:
-  tagline: 菜鸟程序猿笔记
+  tagline: 前端程序猿笔记
   actions:
     - theme: brand
       text: 开始
